@@ -1,0 +1,29 @@
+# to get all project list
+dotnet new list
+
+# for the help
+dotnew new webapi -h
+
+# to create .net web api project with name and controllers
+dotnet new webapi -n API -controllers
+
+# to add project in the solution
+dotnet sln add API
+
+# need for db migration to install
+dotnet tool install --global dotnet-ef --version 9.0.9
+
+# to check all installed tool in dotnet application
+dotnet tool list -g
+
+# to check ef command
+dotnet ef
+
+# command to create db migration
+dotnet ef migrations add InitialCreate -o Data/Migrations\
+
+# to create database and apply migration
+dotnet ef database update
+
+# to drop database
+dotnet ef database drop
