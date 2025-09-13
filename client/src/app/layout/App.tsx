@@ -35,8 +35,8 @@ function App() {
         'radial-gradient(circle, #050305ff, #341a3bff)' :
         'radial-gradient(circle, #baecf9, #c0a7ddff)', py: 6}}>
         <Container maxWidth = 'xl' sx={{mt: 8}}>
-        <Catalog products = {products}/>
-      </Container>
+          <Catalog products = {products}/>
+        </Container>
       </Box>
     </ThemeProvider>
   )
