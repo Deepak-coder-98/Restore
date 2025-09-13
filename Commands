@@ -27,3 +27,18 @@ dotnet ef database update
 
 # to drop database
 dotnet ef database drop
+
+# to install vite for react
+npm create vite@latest
+
+# then go to client folder and run below command to install npm
+npm install
+
+# to run client application
+npm run dev
+
+# to enable client application running on https use a plugin in developement mode
+npm install vite-plugin-mkcert -D
+
+# to download material ui components v6
+npm install @mui/material@6 @emotion/react @emotion/styled
