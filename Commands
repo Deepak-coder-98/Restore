@@ -42,3 +42,6 @@ npm install vite-plugin-mkcert -D
 
 # to download material ui components v6
 npm install @mui/material@6 @emotion/react @emotion/styled
+
+# to install react router 
+npm install react-router-dom --legacy-peer-deps
