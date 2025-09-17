@@ -45,3 +45,9 @@ npm install @mui/material@6 @emotion/react @emotion/styled
 
 # to install react router 
 npm install react-router-dom --legacy-peer-deps
+
+# to install redux-toolkit
+npm install @reduxjs/toolkit
+
+#to install react-redux
+npm install react-redux
