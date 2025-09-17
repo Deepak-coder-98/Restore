@@ -51,3 +51,6 @@ npm install @reduxjs/toolkit
 
 #to install react-redux
 npm install react-redux
+
+# to install react-toast library and to see tost css need to add the css file :- import "react-toastify/dist/ReactToastify.css"
+npm i react-toastify
