@@ -1,5 +1,11 @@
 {
   "omnisharp.useEditorFormattingSettings": true,
   "dotnet.formatting.organizeImportsOnFormat": false,
-  "editor.defaultFormatter": null
+  "editor.defaultFormatter": null,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

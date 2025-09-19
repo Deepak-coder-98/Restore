@@ -11,6 +11,7 @@ builder.Services.AddDbContext<StoreContext>(opt =>
     opt.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 builder.Services.AddCors();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddTransient<ExceptionMiddleware>();
 var app = builder.Build();
 var allowedOrigins = builder.Configuration["CorsOrigin:Allowed"];
@@ -19,7 +20,7 @@ var allowedOrigins = builder.Configuration["CorsOrigin:Allowed"];
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseCors(opts =>
 {
-    opts.AllowAnyHeader().AllowAnyMethod().WithOrigins(allowedOrigins);
+    opts.AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithOrigins(allowedOrigins ?? "https://localhost:3000");
 });
 
 app.MapControllers();

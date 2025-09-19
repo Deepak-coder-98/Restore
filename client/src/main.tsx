@@ -14,7 +14,7 @@ import { ToastContainer } from 'react-toastify';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Provider store={store}>
-      <ToastContainer position='top-right' hideProgressBar theme='colored'/>
+      <ToastContainer position='bottom-right' hideProgressBar theme='colored'/>
       <RouterProvider router={router}/>
     </Provider>
   </StrictMode>

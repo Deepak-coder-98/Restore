@@ -17,7 +17,7 @@ public class DbInitializer
     {
         // this will create db and apply migration if its not exist
         context.Database.Migrate();
-        if (context.Product.Any())
+        if (context.Products.Any())
         {
             return;
         }
@@ -203,7 +203,7 @@ public class DbInitializer
                 },
         };
 
-        context.Product.AddRange(products);
+        context.Products.AddRange(products);
         context.SaveChanges();
     }
 }
